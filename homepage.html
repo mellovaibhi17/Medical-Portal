@@ -1,0 +1,119 @@
+<html>
+<head>
+<title> Arogya Hospital Management</title>
+<style>
+    .image-container {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .image-box {
+        margin: 10px;
+        text-align: center;
+    }
+    
+    .image-box img {
+        width: 200px;
+        height: 150px;
+    }
+    
+    .image-box {
+        margin-top: calc(var(--random-height) * 1px);
+    }
+    
+    .image-box:nth-child(1) {
+        --random-height: ${Math.floor(Math.random() * 100)};
+    }
+    
+    .image-box:nth-child(2) {
+        --random-height: ${Math.floor(Math.random() * 100)};
+    }
+    
+    .image-box:nth-child(3) {
+        --random-height: ${Math.floor(Math.random() * 100)};
+    }
+    
+    .image-box:nth-child(4) {
+        --random-height: ${Math.floor(Math.random() * 100)};
+    }
+    
+    #myUsername {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: #333;
+      background-color: #f0f0f0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+  }
+  
+  #myPassword {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: #333;
+      background-color: #f0f0f0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+  }
+  
+  #blinkingText {
+    animation: blink 6s;
+  }
+
+  @keyframes blink {
+    0% {
+     opacity: 1;
+    }
+    50% {
+     opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  body {
+    border: 10px solid #F8E231;
+    box-shadow: 0 0 0 5px #000;
+  }
+  @font-face {
+    font-family: 'MyFont';
+    src: url('https://example.com/myfont.woff2') format('woff2');
+  }
+  
+  .zico-font{
+    font-family: 'MyFont', sans-serif;
+  }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap" rel="stylesheet">
+</head>
+<body style="background-image: url('bg-img.jpg');">
+<br><br><br><br>
+<center>
+<font size="100" color="white" style="font-family: 'Rubik Maze', cursive;" id="blinkingText"> AROGYA </font><br><br>
+<img src="profile-img.png" width="60" height="60"><br><br>
+<input type="text" id="myUsername" name="myUsername"
+placeholder="Username" maxlength="20" required/><br><br>
+<input type="password" id="myPassword" name="myPassword" placeholder="Password" maxlength="20" required/><br><br>
+<a href="log-in.html"><button style="background-color: #80808080"; color: #ffffff; border: none; border-radius: 15px; font-size: 34px; padding: 30px 50px; cursor: pointer;> Log in </button></a><br><br>
+<a href="sign-in.html"><button style="background-color: #80808080"; color: #ffffff; border: none; border-radius: 15px; font-size: 34px; padding: 30px 50px; cursor: pointer;> Sign in </button></a><br><br></center><br>
+<div class="image-container">
+<div class="image-box">
+<img src="doctor-img.jpg"><br>
+<font color="white" class="zico-font"> DOCTOR </font>
+</div>
+<div class="image-box">
+<img src="patient-img.jpg"><br>
+<font color="white" class="zico-font"> PATIENT </font>
+</div>
+<div class="image-box">
+<img src="nurse-img.jpg"><br>
+<font color="white" class="zico-font"> NURSE </font>
+</div>
+<div class="image-box">
+<img src="management-img.jpg"><br>
+<font color="white" class="zico-font"> MANAGEMENT </font>
+</div>
+</body>
+</html>
